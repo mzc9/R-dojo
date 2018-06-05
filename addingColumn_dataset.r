@@ -33,10 +33,12 @@ midwestCollegeEdu %>% glimpse() # from tibble package - part of tidyverse packag
 #'''================================================================
 #'Adding a new variable with mutate()
 #'   - allows for calculation of new values to the variables created
-#'====================================================================   
+#'==================================================================== 
+
 midwestCollegeEdu <- mutate(midwestCollegeEdu, numCollegeEdu = (round(poptotal * percollege))) # rounded 
 
-# TO DO
+# created an additional column erroneously and so deleted it
+midwestCollegeEdu <- mutate(midwestCollegeEdu, numCollegeEdu = NULL) 
 
 
 
